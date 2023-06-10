@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "../../components/Button";
 
-const BadEnding = () => {
+export const BadEnding = () => {
   const navigate = useNavigate();
 
   const previousClick = () => {
@@ -20,4 +20,20 @@ const BadEnding = () => {
   );
 };
 
-export default BadEnding;
+export const BadEnding2 = () => {
+  const navigate = useNavigate();
+
+  const previousClick = () => {
+    navigate("/");
+  };
+  return (
+    <>
+      <div>
+        바선생은 당신의 맞팔 제안 거절에 상처받았습니다. 바선생은 당신을 기억할
+        것입니다. 바선생의 손자의 손자의 손자의 손자의 손자의 손자의
+        손자들까지도요.
+      </div>
+      <Button onClick={previousClick}>다시 시작하기</Button>
+    </>
+  );
+};

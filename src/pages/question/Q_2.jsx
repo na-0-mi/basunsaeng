@@ -9,6 +9,10 @@ const Q_2 = () => {
     navigate("/q3");
   };
 
+  const overEndingClick = () => {
+    navigate("/BadEnding2");
+  };
+
   const previousClick = () => {
     navigate("/q1");
   };
@@ -19,7 +23,7 @@ const Q_2 = () => {
       <Button onClick={buttonClick}>
         ㅇㅋ당여니할수있지~ 바선생과 인스타 맞팔을 한다.
       </Button>
-      <Button onClick={buttonClick}>
+      <Button onClick={overEndingClick}>
         바선생이 인스타를 왜..? 딱 잘라 거절한다.
       </Button>
       <Button onClick={previousClick}>뒤로가기</Button>

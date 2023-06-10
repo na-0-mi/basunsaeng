@@ -6,7 +6,18 @@ import Q_2 from "../pages/question/Q_2";
 import Q_3 from "../pages/question/Q_3";
 import Q_4 from "../pages/question/Q_4";
 import Q_5 from "../pages/question/Q_5";
-import BadEnding from "../pages/results/BadEnding_1";
+import { BadEnding, BadEnding2 } from "../pages/results/BadEnding";
+import Loading from "../pages/results/Loading";
+import {
+  Entj,
+  Enfj,
+  Enfp,
+  Estj,
+  Entp,
+  Esfj,
+  Esfp,
+  Estp,
+} from "../pages/results/Results";
 
 const Router = () => {
   return (
@@ -19,6 +30,16 @@ const Router = () => {
         <Route path="/q4" element={<Q_4 />} />
         <Route path="/q5" element={<Q_5 />} />
         <Route path="/BadEnding" element={<BadEnding />} />
+        <Route path="/BadEnding2" element={<BadEnding2 />} />
+        <Route path="/Loading" element={<Loading />} />\
+        <Route path="/Esfj" element={<Esfj />} />
+        <Route path="/Estj" element={<Estj />} />
+        <Route path="/Esfp" element={<Esfp />} />
+        <Route path="/Estp" element={<Estp />} />
+        <Route path="/Entp" element={<Entp />} />
+        <Route path="/Entj" element={<Entj />} />
+        <Route path="/Enfj" element={<Enfj />} />
+        <Route path="/Enfp" element={<Enfp />} />
       </Routes>
     </BrowserRouter>
   );

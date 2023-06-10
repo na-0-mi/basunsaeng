@@ -7,13 +7,13 @@ const Q_5 = () => {
   const navigate = useNavigate();
 
   const button_1Click = () => {
-    setCookie("result_3", "q5_1");
-    navigate("/");
+    setCookie("result_3", "a_1");
+    navigate("/Loading");
   };
 
   const button_2Click = () => {
-    setCookie("result_3", "q5_2");
-    navigate("/");
+    setCookie("result_3", "a_2");
+    navigate("/Loading");
   };
 
   const previousClick = () => {
