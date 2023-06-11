@@ -1,8 +1,7 @@
 import React from "react";
 import Button from "../../components/Button";
-import Q_2 from "./Q_2";
-
 import { useNavigate } from "react-router-dom";
+import basunsaeng from "../../images/basunsaeng.png";
 
 const Q_1 = () => {
   const navigate = useNavigate();
@@ -20,6 +19,7 @@ const Q_1 = () => {
 
   return (
     <>
+      <img src={basunsaeng} alt="" width={400} />
       <div>집에 바선생이 나타난 당신, 어떻게 하시겠습니까?</div>
       <Button onClick={overEndingClick}>
         당연히 죽여야지. 너무 징그러우니 빨리 죽인다

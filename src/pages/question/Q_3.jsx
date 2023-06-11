@@ -2,7 +2,7 @@ import React from "react";
 import Button from "../../components/Button";
 import { useNavigate } from "react-router-dom";
 import { setCookie } from "../../cookies";
-
+import talking from "../../images/talking.png";
 const Q_3 = () => {
   const navigate = useNavigate();
 
@@ -21,6 +21,7 @@ const Q_3 = () => {
   };
   return (
     <>
+      <img src={talking} alt="" width={400} />
       <div>
         아니 근데 이 상황이 말이 되나요? 바선생이 어떻게 말을 하는거지..
       </div>

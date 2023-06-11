@@ -2,7 +2,7 @@ import React from "react";
 import Button from "../../components/Button";
 import { useNavigate } from "react-router-dom";
 import { setCookie } from "../../cookies";
-
+import sad from "../../images/sad.png";
 const Q_4 = () => {
   const navigate = useNavigate();
 
@@ -20,6 +20,7 @@ const Q_4 = () => {
   };
   return (
     <>
+      <img src={sad} alt="" width={400} />
       <div>
         혼란스러운 머릿속을 정리하고 있는데, 바선생이 슬픈 가정사 이야기를
         합니다.

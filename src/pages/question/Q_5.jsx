@@ -2,6 +2,7 @@ import React from "react";
 import Button from "../../components/Button";
 import { useNavigate } from "react-router-dom";
 import { setCookie } from "../../cookies";
+import vacation from "../../images/vacation.png";
 
 const Q_5 = () => {
   const navigate = useNavigate();
@@ -21,6 +22,7 @@ const Q_5 = () => {
   };
   return (
     <>
+      <img src={vacation} alt="" width={400} />
       <div>
         이야기를 잘 들어주는 당신에게 감동한 바선생, 여름 휴가를 함께하자고
         제안합니다.

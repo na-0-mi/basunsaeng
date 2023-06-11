@@ -6,7 +6,7 @@ import Button from "../../components/Button";
 const Loading = () => {
   const navigate = useNavigate();
 
-  // 선택지에 따라 알맞은 결과로 보내는 알고리즘
+  // 선택지에 따라 결과 도출하는 알고리즘
   const [cookies] = useCookies(["result_1", "result_2", "result_3"]);
   const getResult = () => {
     const resultMap = {
