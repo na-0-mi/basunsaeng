@@ -18,5 +18,6 @@ const ReusableButton = styled.button`
   border: ${(props) => props.border || "1px solid #ccc"};
   padding: 8px 16px;
   font-size: 14px;
+  font-family: inherit;
   cursor: pointer;
 `;
