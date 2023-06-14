@@ -25,7 +25,7 @@
   .head {
     font-family: 'KIMM_Bold';
     font-size: 20px;
-    width: 80vw;
+    width: 77vw;
     height: 5vh;
     padding-top: 20vh;
     padding-bottom: 3vh;
@@ -73,9 +73,31 @@
   }
 
   /* 결과 페이지 css */
+  .results {
+    font-size: 15px;
+    line-height: 1.5em;
+    width: 80vw;
+    height: auto;
+    margin: auto;
+    margin-bottom: 4vh;
+  }
 
+  .reStarts {
+    background-color: white;
+    border: #F6B93B 2px solid;
+    width: 80vw;
+  }
 
   /* 배드엔딩 페이지 css */
+  .badEnding {
+    /* font-family: 'KIMM_Bold'; */
+    font-size: 16px;
+    line-height: 1.5em;
+    width: 90vw;
+    height: auto;
+    margin: auto;
+    margin-bottom: 4vh;
+  }
 }
 
 /* Small Devices (portrait tablets and large phones) */

@@ -22,7 +22,7 @@ const Q_3 = () => {
   };
   return (
     <>
-      <img className={styles.images} src={talking} alt="" width={400} />
+      <img loading="eager" className={styles.images} src={talking} alt="" />
       <div className={styles.question}>
         아니 근데 이 상황이 말이 되나요?
         <br />

@@ -12,7 +12,12 @@ const Start = () => {
   return (
     <>
       <div className={styles.head}>어느날 집에 바선생이 나타났다?!</div>
-      <img className={styles.startImage} src={basunsaeng} alt="" />
+      <img
+        loading="eager"
+        className={styles.startImage}
+        src={basunsaeng}
+        alt=""
+      />
       <button onClick={buttonClick}>시작하기!</button>
     </>
   );

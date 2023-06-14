@@ -19,7 +19,7 @@ const Q_1 = () => {
 
   return (
     <>
-      <img className={styles.images} src={basunsaeng} alt="" width={400} />
+      <img loading="eager" className={styles.images} src={basunsaeng} alt="" />
       <div className={styles.question}>
         집에 바선생이 나타난 당신, 어떻게 하시겠습니까?
       </div>

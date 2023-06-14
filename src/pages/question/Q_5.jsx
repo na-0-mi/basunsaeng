@@ -22,7 +22,7 @@ const Q_5 = () => {
   };
   return (
     <>
-      <img className={styles.images} src={vacation} alt="" width={400} />
+      <img loading="eager" className={styles.images} src={vacation} alt="" />
       <div className={styles.question}>
         이야기를 잘 들어주는 당신에게 감동한 바선생, 여름 휴가를 함께하자고
         제안합니다.

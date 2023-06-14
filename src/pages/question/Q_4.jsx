@@ -21,7 +21,7 @@ const Q_4 = () => {
   };
   return (
     <>
-      <img className={styles.images} src={sad} alt="" width={400} />
+      <img loading="eager" className={styles.images} src={sad} alt="" />
       <div className={styles.question}>
         혼란스러운 머릿속을 정리하고 있는데, 바선생이 슬픈 가정사 이야기를
         합니다.
