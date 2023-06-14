@@ -1,8 +1,9 @@
 import React from "react";
-import Button from "../../components/Button";
 import { useNavigate } from "react-router-dom";
 import { setCookie } from "../../cookies";
+import styles from "../module.css/pages.module.css";
 import talking from "../../images/talking.png";
+
 const Q_3 = () => {
   const navigate = useNavigate();
 
@@ -21,17 +22,21 @@ const Q_3 = () => {
   };
   return (
     <>
-      <img src={talking} alt="" width={400} />
-      <div>
-        아니 근데 이 상황이 말이 되나요? 바선생이 어떻게 말을 하는거지..
+      <img className={styles.images} src={talking} alt="" width={400} />
+      <div className={styles.question}>
+        아니 근데 이 상황이 말이 되나요?
+        <br />
+        바선생이 어떻게 말을 하는거지..
       </div>
-      <Button onClick={button_1Click}>
+      <button className={styles.btn1} onClick={button_1Click}>
         말도 안돼. 거대한 바선생에게 가위눌리는 꿈을 꾸고 있는 것 같다
-      </Button>
-      <Button onClick={button_2Click}>
+      </button>
+      <button className={styles.btn2} onClick={button_2Click}>
         요즘 세상에 ai도 있는데 바선생이 말하는 것 정도야..
-      </Button>
-      <Button onClick={previousClick}>뒤로가기</Button>
+      </button>
+      <button className={styles.previousBtn} onClick={previousClick}>
+        뒤로가기
+      </button>
     </>
   );
 };

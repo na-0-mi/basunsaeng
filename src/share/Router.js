@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Start from "../pages/Start.jsx";
+import Start from "../pages/question/Start";
 import Q_1 from "../pages/question/Q_1";
 import Q_2 from "../pages/question/Q_2";
 import Q_3 from "../pages/question/Q_3";

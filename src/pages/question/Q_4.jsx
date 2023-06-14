@@ -1,8 +1,9 @@
 import React from "react";
-import Button from "../../components/Button";
 import { useNavigate } from "react-router-dom";
 import { setCookie } from "../../cookies";
+import styles from "../module.css/pages.module.css";
 import sad from "../../images/sad.png";
+
 const Q_4 = () => {
   const navigate = useNavigate();
 
@@ -20,16 +21,20 @@ const Q_4 = () => {
   };
   return (
     <>
-      <img src={sad} alt="" width={400} />
-      <div>
+      <img className={styles.images} src={sad} alt="" width={400} />
+      <div className={styles.question}>
         혼란스러운 머릿속을 정리하고 있는데, 바선생이 슬픈 가정사 이야기를
         합니다.
       </div>
-      <Button onClick={button_1Click}>
+      <button className={styles.btn1} onClick={button_1Click}>
         바선생의 입장도 좀 공감이 되는 것 같다. 바선생도 힘들었겠군..
-      </Button>
-      <Button onClick={button_2Click}>글쿤</Button>
-      <Button onClick={previousClick}>뒤로가기</Button>
+      </button>
+      <button className={styles.btn2} onClick={button_2Click}>
+        글쿤...
+      </button>
+      <button className={styles.previousBtn} onClick={previousClick}>
+        뒤로가기
+      </button>
     </>
   );
 };

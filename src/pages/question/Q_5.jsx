@@ -1,7 +1,7 @@
 import React from "react";
-import Button from "../../components/Button";
 import { useNavigate } from "react-router-dom";
 import { setCookie } from "../../cookies";
+import styles from "../module.css/pages.module.css";
 import vacation from "../../images/vacation.png";
 
 const Q_5 = () => {
@@ -22,18 +22,20 @@ const Q_5 = () => {
   };
   return (
     <>
-      <img src={vacation} alt="" width={400} />
-      <div>
+      <img className={styles.images} src={vacation} alt="" width={400} />
+      <div className={styles.question}>
         이야기를 잘 들어주는 당신에게 감동한 바선생, 여름 휴가를 함께하자고
         제안합니다.
       </div>
-      <Button onClick={button_1Click}>
-        일년에 한번뿐인 여름휴가! 끝장나게 준비해서 (바선생과) 즐겁게 다녀와야지
-      </Button>
-      <Button onClick={button_2Click}>
-        뭐 어떻게든 되지 않을까? 스트릿 출신 바선생이 잘 해줄거야 ~
-      </Button>
-      <Button onClick={previousClick}>뒤로가기</Button>
+      <button className={styles.btn1} onClick={button_1Click}>
+        마지막 여름휴가! 끝장나게 준비해서 즐겁게 다녀와야지
+      </button>
+      <button className={styles.btn2} onClick={button_2Click}>
+        뭐 어떻게든 되지 않을까? 스트릿 바선생이 잘 해줄거야
+      </button>
+      <button className={styles.previousBtn} onClick={previousClick}>
+        뒤로가기
+      </button>
     </>
   );
 };

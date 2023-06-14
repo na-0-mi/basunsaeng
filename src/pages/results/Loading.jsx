@@ -1,7 +1,7 @@
 import React from "react";
 import { useCookies } from "react-cookie";
 import { useNavigate } from "react-router-dom";
-import Button from "../../components/Button";
+import styles from "../module.css/pages.module.css";
 
 const Loading = () => {
   const navigate = useNavigate();
@@ -29,8 +29,10 @@ const Loading = () => {
   };
   return (
     <>
-      <div>당신과 바선생의 운명은 ...?</div>
-      <Button onClick={getResult}>결과보기</Button>
+      <div className={styles.head}>당신과 바선생의 운명은 ...?</div>
+      <button className={styles.btn1} onClick={getResult}>
+        결과보기
+      </button>
     </>
   );
 };

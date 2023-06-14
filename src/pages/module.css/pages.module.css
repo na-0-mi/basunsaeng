@@ -1,0 +1,94 @@
+/* Extra Small Devices (phones) */
+@media only screen and (max-width: 480px) {
+  body {
+    width: auto
+  }
+
+  /* 모든 버튼의 기본 css값 */
+  /* 글자수에 따른 버튼 길이, 버튼 개수에 따른 마진 조정필요 */
+  button {
+    font-family: inherit;
+    box-sizing: border-box;
+    margin: auto;
+    background: #F6B93B;
+    border: 0px;
+    border-radius: 4px;
+    line-height: 1.4em;
+    width: 90vw;
+    height: 6.2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* 시작 페이지 css */
+  .head {
+    font-family: 'KIMM_Bold';
+    font-size: 20px;
+    width: 80vw;
+    height: 5vh;
+    padding-top: 20vh;
+    padding-bottom: 3vh;
+    display: flex;
+    margin: auto;
+  }
+
+  .startImage {
+    width: 65vw;
+    height: fit-content;
+    margin: auto;
+    margin-bottom: 3vh;
+    display: flex
+  }
+
+  /* 응답 페이지 css */
+  .images {
+    width: 60vw;
+    height: fit-content;
+    margin: auto;
+    margin-bottom: 3vh;
+    display: flex;
+    padding-top: 15vh;
+  }
+
+  .question {
+    /* font-family: 'KIMM_Bold'; */
+    font-size: 15px;
+    line-height: 1.4em;
+    width: 91vw;
+    height: auto;
+    margin: auto;
+    margin-bottom: 4vh;
+  }
+
+  .btn1,
+  .btn2,
+  .previousBtn {
+    margin-bottom: 1vh;
+  }
+
+  .previousBtn {
+    background-color: white;
+    border: #F6B93B 2px solid;
+  }
+
+  /* 결과 페이지 css */
+
+
+  /* 배드엔딩 페이지 css */
+}
+
+/* Small Devices (portrait tablets and large phones) */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  /* CSS 코드 */
+}
+
+/* Medium Devices (landscape tablets) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* CSS 코드 */
+}
+
+/* Large Devices (laptops and desktops) */
+@media only screen and (min-width: 1025px) {
+  /* CSS 코드 */
+}

@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'KIMM_Bold';
+  font-family: 'KIMM_Light';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -13,8 +13,8 @@ body {
 }
 
 @font-face {
-  font-family: 'KIMM_Bold';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KIMM_Bold.woff2') format('woff2');
+  font-family: 'KIMM_Light';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KIMM_Light.woff2') format('woff2');
   font-weight: 300;
   font-style: normal;
 }
@@ -23,3 +23,5 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@media only screen and (min-width: 480px) {}
