@@ -20,7 +20,7 @@ const Q_2 = () => {
 
   return (
     <>
-      <img loading="eager" className={styles.images} src={insta} alt="" />
+      <img className={styles.images} src={insta} alt="" />
       <div className={styles.question}>
         갑자기 바선생이 인스타 팔로우를 하자고 합니다. 당신의 선택은?
       </div>
